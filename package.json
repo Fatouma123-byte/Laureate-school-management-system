@@ -1,0 +1,59 @@
+{
+  "name": "ahmed_dev_next_school_dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "seed": "prisma generate && ts-node --compiler-options '{\"module\":\"CommonJS\"}' prisma/seed.ts",
+    "postinstall": "prisma generate"
+  },
+  "dependencies": {
+    "@clerk/elements": "^0.23.26",
+    "@clerk/nextjs": "^6.19.3",
+    "@fullcalendar/daygrid": "^6.1.17",
+    "@fullcalendar/interaction": "^6.1.17",
+    "@fullcalendar/react": "^6.1.17",
+    "@hookform/resolvers": "^5.0.1",
+    "@prisma/client": "^6.8.2",
+    "@prisma/config": "^7.8.0",
+    "@prisma/studio": "^0.511.0",
+    "@syncfusion/ej2-react-calendars": "^29.1.40",
+    "@syncfusion/ej2-react-schedule": "^29.1.41",
+    "@types/react-big-calendar": "^1.16.1",
+    "lucide-react": "^0.511.0",
+    "moment": "^2.30.1",
+    "next": "^14.2.25",
+    "next-cloudinary": "^6.16.0",
+    "react": "^18",
+    "react-big-calendar": "^1.18.0",
+    "react-calendar": "^5.1.0",
+    "react-dom": "^18",
+    "react-hook-form": "^7.55.0",
+    "react-icons": "^5.5.0",
+    "react-toastify": "^11.0.5",
+    "recharts": "^2.15.1",
+    "tailwindcss-theming": "^3.0.0-beta.3",
+    "ts-node": "^10.9.2",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@mermaid-js/mermaid-cli": "^11.15.0",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.5",
+    "postcss": "^8",
+    "prettier": "^3.5.3",
+    "prisma": "^6.6.0",
+    "prisma-erd-generator": "^2.4.3",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  },
+  "prisma": {
+    "seed": "npm run seed"
+  }
+}
